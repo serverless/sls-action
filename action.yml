@@ -1,0 +1,34 @@
+name: 'Serverless Framework'
+description: 'Runs Serverless Framework commands.'
+author: 'Microsoft - Commercial Software Engineering (CSE)'
+inputs:
+  slsVersion:
+    description: 'The version of Serverless Framework that should be used. Defaults to ''latest''. [Required]'
+    required: true
+    default: 'latest'
+  slsCommand:
+    description: 'The Serverless Framework command that should be ran (e.g. deploy, invoke, version, etc.). [Required]'
+    required: true
+    default: 'deploy'
+  yamlFile:
+    description: 'The serverless yaml file. [Optional]'
+    required: false
+    default: 'serverless.yml'
+  azureSubId:
+    description: 'The Azure Subscription ID that should be used for deployments. [Optional]'
+    required: false
+  azureResourceGroup:
+    description: 'The Azure resource group that should be used for deployments. [Optional]'
+    required: false
+  azurePrefix:
+    description: 'A prefix string that should be used when generating resource names. [Optional]'
+    required: false
+  region:
+    description: 'The region should be used for deployments, provided to the Serverless CLI. [Optional]'
+    required: false
+  stage:
+    description: 'The stage that should be used for deployments, provided to the Serverless CLI. [Optional]'
+    required: false
+runs:
+  using: 'node12'
+  main: 'lib/main.js'
