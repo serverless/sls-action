@@ -1,0 +1,48 @@
+{
+  "name": "sls-action",
+  "version": "0.1.0",
+  "private": true,
+  "description": "GitHub action for Serverless Framework.",
+  "main": "lib/main.js",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/serverless/azure-build-task.git"
+  },
+  "keywords": [
+    "Serverless",
+    "Serverless Framework",
+    "GitHub Action"
+  ],
+  "author": "Microsoft - Commercial Software Engineering (CSE)",
+  "contributors": [
+    {
+      "name": "Shawn Gaul",
+      "email": "shgaul@microsoft.com"
+    },
+    {
+      "name": "Lucas Huet-Hudson",
+      "email": "lucashh@microsoft.com"
+    },
+    {
+      "name": "P.J. Little",
+      "email": "pelittle@microsoft.com"
+    }
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.0.0",
+    "@actions/exec": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^24.0.22",
+    "@types/node": "^12.12.6",
+    "jest": "^24.9.0",
+    "jest-circus": "^24.9.0",
+    "ts-jest": "^24.1.0",
+    "typescript": "^3.7.2"
+  }
+}
