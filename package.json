@@ -5,7 +5,8 @@
   "description": "GitHub action for Serverless Framework.",
   "main": "lib/main.js",
   "scripts": {
-    "build": "tsc",
+    "build": "npx webpack",
+    "compile": "npx tsc",
     "test": "jest"
   },
   "repository": {
@@ -43,6 +44,9 @@
     "jest": "^24.9.0",
     "jest-circus": "^24.9.0",
     "ts-jest": "^24.1.0",
-    "typescript": "^3.7.2"
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.2",
+    "webpack": "^4.41.2",
+    "webpack-cli": "^3.3.10"
   }
 }
